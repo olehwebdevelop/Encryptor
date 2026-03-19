@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Encryptor</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="video">
+            <video autoplay muted loop playsinline poster="background2.png">
+            <source src="background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="main">
+            <div class="encryptor">
+                <h2>Encryptor/Decryptor</h2>
+                <h3>Caesar used</h3>
+                <div class="encryptor-main">
+                    <label for="text-input">Enter your secret message</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="text-input" placeholder=" Message...">
+                    </div>
+                        <button class="enter" id="enter">Encrypt</button>
+                    <div class="line"></div>
+                    <div id="output">Your encrypted text</div>
+                </div>
+                <div class="encryptor-buttons">
+                    <button id="substitution" class="en-btn">Substitution</button>
+                    <button id="atbash" class="en-btn">Atbash</button>
+                    <button id="transposition" class="en-btn">Transposition</button>
+                </div>
+                <button class="change" id="change">Want to decrypt?</button>
+            </div>
+        </div>
+    </body>
+    <script src="script1.js"></script>
+</html>
